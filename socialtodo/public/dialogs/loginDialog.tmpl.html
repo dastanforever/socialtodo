@@ -1,0 +1,61 @@
+<md-dialog aria-label="Enter into the system" ng-controller="form as fm">
+<form action="{[submit]}" method="post">
+    <md-toolbar>
+      <div class="md-toolbar-tools">
+        <h2>Enter into the system by {[submit]}</h2>
+        <span flex></span>
+          <i class="material-icons" ng-click="cancel()">format_align_justify</i>
+      </div>
+    </md-toolbar>
+    <md-dialog-content style="max-width:800px;max-height:810px;">
+      <md-tabs md-dynamic-height md-border-bottom>
+        <md-tab label="Register" ng-click="changesubmit('register')">
+          <md-content class="md-padding" layout="column">
+              <span flex><h2>Register</h2></span>
+              <div layout="row">
+                <md-input-container flex>
+                  <label>First Name</label>
+                  <input name="fname" ng-model="user.firstname">
+                </md-input-container>
+                <md-input-container flex>
+                  <label>Last Name</label>
+                  <input lname="lname" ng-model="user.lastname">
+                </md-input-container>
+              </div>
+              <md-input-container flex>
+                <label>Username</label>
+                <input name="username" ng-model="user.username">
+              </md-input-container>
+              <md-input-container flex>
+                <label>Email</label>
+                <input name="emailid" ng-model="user.email" type="email">
+              </md-input-container>
+              <md-input-container flex>
+                <label>Password</label>
+                <input name="password" type="email">
+              </md-input-container>
+          </md-content>
+        </md-tab>
+
+        <md-tab label="Login" ng-click="changesubmit('login')">
+          <md-content class="md-padding">
+            <md-input-container flex>
+                <label>Username</label>
+                <input name="regusername" ng-model="user.username">
+              </md-input-container>
+              <md-input-container flex>
+                <label>Password</label>
+                <input name="regpassword" type="password">
+              </md-input-container>
+          </md-content>
+        </md-tab>
+      </md-tabs>
+    </md-dialog-content>
+
+    <md-dialog-actions layout="row">
+      <span flex></span>
+      <input type="submit"/>
+    </md-dialog-actions>
+
+</form>
+</md-dialog>

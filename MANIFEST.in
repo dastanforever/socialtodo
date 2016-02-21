@@ -1,0 +1,4 @@
+recursive-include socialtodo/public *
+include socialtodo/public/favicon.ico
+recursive-include socialtodo/i18n *
+recursive-include socialtodo/templates *

@@ -1,0 +1,36 @@
+{% extends 'base.jinja' %}
+
+{% block navs %}
+
+	<div layout="column" layout="center center">
+
+		<div flex="15">
+			<md-toolbar layout="row" layout="stretch stretch">
+				<span flex></span>
+				
+				<div flex>
+					<div layout="row" layout-align="center center" ng-controller="navmenu as nv">
+						<md-button ng-click="nv.showlogin($mdDialog, $event)">
+						Login/Register
+						</md-button>
+
+						<md-button>
+						Features
+						</md-button>
+
+						<md-button>
+						About
+						</md-button>
+
+					</div>
+				</div>
+			</md-toolbar>
+		</div>
+
+	</div>
+
+{% endblock %}
+
+{% block scripts%}
+<script type="text/javascript" src="javascript/front.js"></script>
+{% endblock %}

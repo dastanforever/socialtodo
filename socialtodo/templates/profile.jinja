@@ -1,0 +1,59 @@
+{% extends "master.jinja" %}
+
+{% block title %}{{ username }}{% endblock %}
+
+{% block contents %}
+
+    <div layout='column' ng-controller="userinfo">
+        
+
+        <div id="headpro" layout="row">
+            
+        <md-card id="userinfo" flex="60">
+        <md-card-title>
+          <md-card-title-text>
+            <span class="md-headline">Pranav Sharma</span>
+            <span class="md-subhead">Status</span>
+          </md-card-title-text>
+          <md-card-title-media>
+            <div class="md-media-lg card-media"></div>
+          </md-card-title-media>
+        </md-card-title>
+        <md-card-actions layout="row" layout-align="end center">
+          <md-button>Send Request</md-button>
+          <md-button>Remove Friend</md-button>
+        </md-card-actions>
+        </md-card>
+
+        <div id="about" flex>
+            <md-card>
+                <md-card-title>
+                    <span class="md-headline">About {{username}}</span>
+                    {[userinformation]}
+                </md-card-title>
+                <md-content>
+                    
+                </md-content>
+            </md-card>
+        </div>
+
+        </div>
+
+        <div id="intereactions">
+            <md-card>
+                <md-card-title>
+                    <span class="md-headline">Your and {{username}}'s Interactions</span>
+                </md-card-title>
+                <md-content>
+                </md-content>
+            </md-card>
+        </div>
+
+    </div>
+
+
+{% endblock %}
+
+{% block scripts %}
+    <script type="text/javascript" src="/javascript/controllers/profile.js"></script>
+{% endblock %}

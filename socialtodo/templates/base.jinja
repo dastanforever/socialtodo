@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html ng-app="angularapp">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/angular-material.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+    {% block styles %}{% endblock %}
+
+    <title>{% block title %}{% endblock %} | SocialToDo </title>
+
+</head>
+
+<body>
+    
+        
+    {% block navs%}
+    {% endblock %}
+
+
+
+
+    
+
+
+
+
+
+    
+    <script src="/javascript/angular.min.js"></script>
+    <script src="/javascript/angular-material.min.js"></script>
+    <script src="/javascript/angular-animate.min.js"></script>
+    <script src="/javascript/angular-route.min.js"></script>
+    <script src="/javascript/angular-aria.min.js"></script>
+    <script src="/javascript/angular-messages.min.js"></script>
+
+    
+    <script type="text/javascript">
+        var angularapp = angular.module('angularapp',['ngMaterial', 'ngMessages']);
+        angularapp
+        .config(['$interpolateProvider', function($interpolateProvider) {
+            $interpolateProvider.startSymbol('{[');
+            $interpolateProvider.endSymbol(']}');
+        }]);
+    </script>
+
+
+    
+    {% block scripts %}{% endblock %}
+
+</body>
+</html>

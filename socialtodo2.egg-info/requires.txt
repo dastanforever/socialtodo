@@ -1,0 +1,5 @@
+TurboGears2 >= 2.2.2
+Genshi
+Jinja2
+tgming
+tw2.forms

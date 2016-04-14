@@ -1,10 +1,13 @@
 var express = require('express');
-    
 var morgan = require('morgan');
+var appsettings = require('./settings.js');
 
-var hostname = 'localhost';
-var port = 3000;
 
+// Url Configs.
+var hostname = appsettings.hostname;
+var port = appsettings.port;
+
+// Express app.
 var app = express();
 
 // Development environment logging.

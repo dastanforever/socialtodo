@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 var setting = require('../settings.js'); 
 
-mongoose.connect(setting.dburl);
+//mongoose.connect(setting.dburl);
 
 var TodoSchema = new mongoose.Schema({
     name: String,
@@ -14,4 +14,6 @@ var TodoSchema = new mongoose.Schema({
 
 
 
-var Todo = mongoose.model('Todo', TodoSchema);
+//var Todo = mongoose.model('Todo', TodoSchema);
+
+//module.exports = Todo;

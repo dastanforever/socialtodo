@@ -4,7 +4,7 @@ var userController = require('./user.js');
 
 
 module.exports = {
-    index: indexController,
+    index: indexController.index,
     todo: todoController,
-    user: userController, 
+    user: userController.profile, 
 };

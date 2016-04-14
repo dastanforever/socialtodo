@@ -1,15 +1,15 @@
 var express = require('express');
-var router = express.Router();
+var profile = express.Router();
 
-router.get('/', function(req, res){
+profile.get('/', function(req, res){
     res.send("User Home"); 
 });
 
-router.get('/settings', function(req, res) {
+profile.get('/settings', function(req, res) {
     res.send("User settings page.");
 });
 
 
 
 
-module.exports = router;
+module.exports = profile;

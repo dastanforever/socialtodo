@@ -4,7 +4,7 @@ module.exports = {
     
     hostname: 'localhost',
     port: 8080,
-    dburl: 'mongodb://localhost:27017/testtodo',
+    dburl: 'mongodb://localhost/testtodo',
     author: 'direwolf7',
     
     

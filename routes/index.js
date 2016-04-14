@@ -1,17 +1,24 @@
-
+var express = require('express');
+var index = express.Router();
+var Model = require('../model/models.js')
 
 
 // Index Home for a user. 
-
-app.get("/", function(req, res){
+index.get("/", function(req, res){
     res.send("Hello Guest!");
 });
 
-app.post("/", function(req, res){
+index.post("/", function(req, res){
     res.send("POST NOT ALLOWED");
 });
 
-app.route('/login')
+index.route('/login')
     .get(function(req, res) {
         res.send("Login Page");
-    });
+});
+
+
+
+
+
+module.exports = index;

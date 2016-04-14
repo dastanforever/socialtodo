@@ -1,0 +1,16 @@
+{
+  "name": "eversnap",
+  "version": "1.0.0",
+  "description": "Eversnap assignment",
+  "main": "index.js",
+  "scripts": {
+    "test": "testsnap"
+  },
+  "author": "direwolf7",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.4",
+    "mongoose": "^4.4.12",
+    "morgan": "^1.7.0"
+  }
+}
